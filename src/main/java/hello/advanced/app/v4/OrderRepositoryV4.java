@@ -14,9 +14,6 @@ public class OrderRepositoryV4 {
 
     public void save(String itemId) {
 
-
-        TraceStatus status = null;
-
         AbstractTemplate<Void> template = new AbstractTemplate<Void>(trace) {
             @Override
             protected Void call() {
